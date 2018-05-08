@@ -2,7 +2,7 @@ package skhu.artview;
 
 public class User {
 
-	int id;
+	int id;	//test
 	int fav_artfield_id;
 	String login_id;
 	String pwd;
