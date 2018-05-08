@@ -1,4 +1,4 @@
-package skhu.artview;
+package skhu.artview.dto;
 
 public class Artist extends User {
 

@@ -1,4 +1,4 @@
-package skhu.artview;
+package skhu.artview.dto;
 
 public enum UserType {
 	NORMAL("1"),
