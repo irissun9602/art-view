@@ -1,6 +1,7 @@
 package skhu.artview;
 
 public class User {
+
 	int id;
 	int fav_artfield_id;
 	String login_id;
@@ -10,7 +11,7 @@ public class User {
 	String email;
 	int age;
 	UserType userType;
-
+//constructor
 	public User(int id, int fav_artfield_id, String login_id, String pwd, String name, String phone, String email,
 			int age) {
 
@@ -24,6 +25,7 @@ public class User {
 		this.age = age;
 		this.userType =UserType.NORMAL;
 	}
+//getter&setter
 	public int getId() {
 		return id;
 	}
