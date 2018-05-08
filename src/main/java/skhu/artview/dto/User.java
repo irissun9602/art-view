@@ -12,6 +12,7 @@ public class User {
 	int age;
 	UserType userType;
 //constructor
+	public User() {};
 	public User(int id, int fav_artfield_id, String login_id, String pwd, String name, String phone, String email,
 			int age) {
 
