@@ -11,6 +11,6 @@ public interface UserMapper {
     User findOne(int id);
     List<User> findAll();
     void insert(User user);
-    void update(User user);
+   // void update(User user);
     void delete(int id);
 }
