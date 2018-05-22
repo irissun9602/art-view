@@ -5,7 +5,6 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import skhu.artview.mapper.ArtfieldMapper;
 import skhu.artview.service.CommuService;
 
 @RestController
@@ -13,7 +12,6 @@ import skhu.artview.service.CommuService;
 @RequestMapping("api")
 public class CommuController {
 
-	@Autowired ArtfieldMapper artfieldMapper;
 	@Autowired CommuService commuService;
 
 	/*작성자: 남하영
