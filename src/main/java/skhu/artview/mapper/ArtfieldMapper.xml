@@ -5,13 +5,13 @@
 <mapper namespace="skhu.artview.mapper.ArtfieldMapper">
 
   <select id="findOne" resultType="Artfield">
-    SELECT * FROM Artfield WHERE id = #{id}
+    SELECT * FROM artfield WHERE id = #{id}
   </select>
   
 
   <select id="findAll" resultType="Artfield">
     SELECT *
-    FROM Artfield
+    FROM artfield
   </select>
 
 </mapper>
