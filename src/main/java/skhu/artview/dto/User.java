@@ -25,7 +25,8 @@ public class User {
 		this.age = age;
 		this.userType =UserType.NORMAL;
 	}
-//getter&setter
+	
+	//getter&setter
 	public int getId() {
 		return id;
 	}
