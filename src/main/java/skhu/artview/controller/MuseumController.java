@@ -8,8 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import skhu.artview.model.Item;
@@ -24,7 +24,7 @@ public class MuseumController {
 	MuseumService service;
 
 	@RequestMapping("bookList")
-		   public List<Item> bookList(Model model, HttpServletRequest request, @RequestParam(required=false)String keyword)  throws Exception {
+		   public List<Item> bookList(Model model, HttpServletRequest request, @PathVariable(required=false)String keyword)  throws Exception {
 			keyword="java";
 
 		       return service.searchItem(keyword,1,10);
