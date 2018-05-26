@@ -24,7 +24,7 @@ public class GuestController {
 	// 회원 아이디 조회
 	@RequestMapping(value = "user/{login_id}")
 	public User user(@PathVariable("login_id") String login_id) {
-		return userService.findOne(login_id);
+		return userService.findOneByLoginId(login_id);
 	}
 
 	// 전체 회원 조회

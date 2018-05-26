@@ -82,4 +82,3 @@ public class Artist extends User {
 
 
 }
->>>>>>> branch 'master' of https://github.com/chueunjeong/art-view
