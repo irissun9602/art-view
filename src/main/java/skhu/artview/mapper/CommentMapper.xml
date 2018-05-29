@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+             "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="skhu.artview.mapper.CommentMapper">
+
+	<select id="findOne" resultType="Comment">
+		SELECT * FROM comment WHERE id = #{id}
+	</select>
+
+	<select id="findByUserId" resultType="Comment">
+		SELECT * FROM comment WHERE userId = #{userId}
+	</select>
+	
+	<select id="findByArticleId" resultType="Comment">
+		SELECT * FROM comment WHERE articleId = #{articleId}
+	</select>
+	
+	<select id="findAll" resultType="Comment">
+		SELECT * FROM comment
+	</select>
+
+	<insert id="commentUpload" useGeneratedKeys="true" keyProperty="id">
+		INSERT comment (articleId, userId, context)
+		VALUES (#{articleId}, #{userId}, #{context})
+	</insert>
+	
+	<insert id="rateUpload" useGeneratedKeys="true" keyProperty="id">
+		INSERT comment (spaceId, userId, context, rate)
+		VALUES (#{spaceId}, #{userId}, #{context}, #{rate})
+	</insert>
+	
+	<update id="updateContext">
+		UPDATE comment SET context = #{context}
+		WHERE id = #{id}
+	</update>
+	
+	<update id="updateRate">
+		UPDATE comment SET rate = #{rate}
+		WHERE id = #{id}
+	</update>
+	
+	<delete id="delete">
+	    DELETE FROM comment WHERE id = #{id}
+	</delete>
+
+</mapper>
