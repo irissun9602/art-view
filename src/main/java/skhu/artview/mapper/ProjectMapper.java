@@ -8,6 +8,7 @@ import skhu.artview.dto.Project;
 @Mapper
 public interface ProjectMapper {
 	Project findOne(int id);
+	List<Project> findBySubject(String subject);
     List<Project> findAll();
     void delete(int id);
 }
