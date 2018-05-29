@@ -1,9 +1,12 @@
+//게시글에 달린 코멘트와 공간 리스트에 달린 평가를 구분해서 뿌려주어야 함
+
 package skhu.artview.dto;
 
 public class Comment {
 
 	int id;
 	int articleId;
+	int spaceId;
 	int userId;
 	String context;
 	int rate;
@@ -19,6 +22,12 @@ public class Comment {
 	}
 	public void setArticleId(int articleId) {
 		this.articleId = articleId;
+	}
+	public int getSpaceId() {
+		return spaceId;
+	}
+	public void setSpaceId(int spaceId) {
+		this.spaceId = spaceId;
 	}
 	public int getUserId() {
 		return userId;
