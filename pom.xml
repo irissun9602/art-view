@@ -80,6 +80,15 @@
 		</dependency>
 		<!-- netty, simple json, redis 추가 끝-->
 		
+		<!-- lombok 추가 -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
+			<version>1.16.18</version>
+		</dependency>
+		<!-- lombok 추가 끝 -->
+		
 	</dependencies>
 
 	<build>
